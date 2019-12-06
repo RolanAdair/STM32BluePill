@@ -1,3 +1,5 @@
+## Description
+
 Modified develop enviroment for STM32F103C8T6 (BluePill) from Warren Gay book
 "Beginning STM32 Developing with FreeRTOS, libopencm3 and GCC". It is necessary to use a ST-Link for flashing the microcontroller.
 
