@@ -7,21 +7,21 @@ Modified develop enviroment for STM32F103C8T6 (BluePill) from Warren Gay book
 
 
 ### Installing:
-- Install Arm-none-eabi toolchain:
+1. Install Arm-none-eabi toolchain:
 
 		sudo apt-get install gcc-arm-none-eabi
 
-- Install St-Link:
+2. Install St-Link:
 		sudo apt-get install stlink-tool
 
-- At "include" folder run:
+3. At "include" folder run:
 		git clone git://github.com/libopencm3/libopencm3.git
 
-- Download FreeRTOS from https://www.freertos.org/. Add FreeRTOSvXX.X.X folder in "include/rtos". Aditionally you have to  edit the variable FREERTOS on STM32BluePill/NewProjectRTOS.mk like this:
+4. Download FreeRTOS from https://www.freertos.org/. Add FreeRTOSvXX.X.X folder in "include/rtos". Aditionally you have to  edit the variable FREERTOS on STM32BluePill/NewProjectRTOS.mk like this:
 
 		FREERTOS	?= FreeRTOSv10.2.1
 
-- On STM32BluePill run
+5. On STM32BluePill run
 		make
 
 
