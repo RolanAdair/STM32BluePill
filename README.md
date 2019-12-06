@@ -6,8 +6,7 @@ Modified develop enviroment for STM32F103C8T6 (BluePill) from Warren Gay book
 @author: Rolan Adair Bacilio Anota
 
 
-Installing:
-======
+### Installing:
 1.Install Arm-none-eabi toolchain:
 
 		sudo apt-get install gcc-arm-none-eabi
@@ -27,15 +26,12 @@ Installing:
 
 
 
-Notes:
-======
-
 1. When compiling and you get the error message getline.c:5:20: fatal error: memory.h: No such file or directory, at the line where it is coded as "#include <memory.h>", you may have to change that to "#include <string.h>" instead. The compiler folks have sometimes moved the header file.
 
 1. It has been reported that: Kubuntu 18.04 ships with arm-none-eabi-gcc (15:6.3.1+svn253039-1build1) 6.3.1 20170620, with this compiler the code does not work (creates problems for FreeRTOS). memcpy seems to be the problematic function call in the code, it is called by FreeRTOS when adding an element to the queue. (details in the FreeRTOS discussion on SourceForge)
 
-Create a Proyect:
-======
+### Create a Proyect:
+
 
 In STM32BluePill folder
 
@@ -49,19 +45,24 @@ In STM32BluePill folder
 The proyects are stored in src folder with the name "newproject".
 
 
-Compile Proyect:
-======
+### Compile Proyect:
+
 
 in src/"myPROYECT" you have to run 
 
 		make
 
 
-FLASHING BIN:
-======
+### FLASHING BIN:
+
 
 in src/"myPROYECT" you have to run:
 
 		make flash
 
 
+
+
+
+Notes:
+======
