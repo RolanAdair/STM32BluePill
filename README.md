@@ -4,7 +4,7 @@ Modified develop enviroment for STM32F103C8T6 (BluePill) from Warren Gay book
 "Beginning STM32 Developing with FreeRTOS, libopencm3 and GCC". It is necessary to use a ST-Link for flashing the microcontroller.
 
 
-**Author: Rolan Adair Bacilio Anota
+**Author: Rolan Adair Bacilio Anota**
 
 ### Installing:
 1. Install Arm-none-eabi toolchain:
@@ -12,9 +12,11 @@ Modified develop enviroment for STM32F103C8T6 (BluePill) from Warren Gay book
 		sudo apt-get install gcc-arm-none-eabi
 
 2. Install St-Link:
+
 		sudo apt-get install stlink-tool
 
 3. At "include" folder run:
+		
 		git clone git://github.com/libopencm3/libopencm3.git
 
 4. Download FreeRTOS from https://www.freertos.org/. Add FreeRTOSvXX.X.X folder in "include/rtos". Aditionally you have to  edit the variable FREERTOS on STM32BluePill/NewProjectRTOS.mk like this:
@@ -22,8 +24,8 @@ Modified develop enviroment for STM32F103C8T6 (BluePill) from Warren Gay book
 		FREERTOS	?= FreeRTOSv10.2.1
 
 5. On STM32BluePill run
+		
 		make
-
 
 
 ### Create a Proyect:
