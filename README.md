@@ -1,12 +1,11 @@
-/*
 Modified develop enviroment for STM32F103C8T6 (BluePill) from Warren Gay book
 "Beginning STM32 Developing with FreeRTOS, libopencm3 and GCC". It is necessary to use a ST-Link for flashing the microcontroller.
 
 @author: Rolan Adair Bacilio Anota
-*/+
 
 
-********************************         Installing
+Installing:
+======
 1.Install Arm-none-eabi toolchain:
 
 		sudo apt-get install gcc-arm-none-eabi
@@ -33,7 +32,8 @@ Notes:
 
 1. It has been reported that: Kubuntu 18.04 ships with arm-none-eabi-gcc (15:6.3.1+svn253039-1build1) 6.3.1 20170620, with this compiler the code does not work (creates problems for FreeRTOS). memcpy seems to be the problematic function call in the code, it is called by FreeRTOS when adding an element to the queue. (details in the FreeRTOS discussion on SourceForge)
 
-*********************************          CREATE A PROYECT
+Create a Proyect:
+======
 
 In STM32BluePill folder
 
@@ -47,14 +47,16 @@ In STM32BluePill folder
 The proyects are stored in src folder with the name "newproject".
 
 
-********************************           COMPILE PROYECT
+Compile Proyect:
+======
 
 in src/"myPROYECT" you have to run 
 
 		make
 
 
-*****************************           FLASHING BIN
+FLASHING BIN:
+======
 
 in src/"myPROYECT" you have to run:
 
