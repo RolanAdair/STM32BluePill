@@ -23,7 +23,7 @@ Modified develop enviroment for STM32F103C8T6 (BluePill) from Warren Gay book
 
 		FREERTOS	?= FreeRTOSv10.2.1
 
-5. On STM32BluePill run
+5. On "STM32BluePill" run
 		
 		make
 
